@@ -14,11 +14,6 @@ A simple web-based tool that lets you create custom buttons instantly. You can s
 
 ⚡ Live preview of the generated button
 
-📂 Project Structure
-Button_Maker/
-├── index.html   # Main interface (form + button preview)
-├── index.js     # JavaScript logic for button creation
-└── README.md    # Documentation
 
 🛠️ Technologies Used
 
