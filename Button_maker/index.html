@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Maker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #ffc2fd;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 300px;
+    }
+
+    .container input {
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .color-label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🎨 Button Maker</h2>
+
+    <input type="text" id="btnText" placeholder="Button Text">
+    <input type="number" id="btnWidth" placeholder="Button Width (px)">
+    <input type="number" id="btnHeight" placeholder="Button Height (px)">
+
+    <label class="color-label">Background Color:</label>
+    <input type="color" id="bgColor" value="#4CAF50">
+
+    <label class="color-label">Text Color:</label>
+    <input type="color" id="textColor" value="#ffffff">
+
+    <input type="number" id="borderRadius" placeholder="Border Radius (px)">
+    
+    <button class="btn" onclick="createButton()">Create Button</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
